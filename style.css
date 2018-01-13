@@ -65,11 +65,11 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 a, a:visited { /* порядок правил для ссылок имеет значение */
-	color: #e6618c;
+	color: #339933;
 	text-decoration: underline;
 }
 a:hover {
-	color: #fdf208;
+	color: #339933;
 	text-decoration:none;
 }
 a:focus, a:active {
@@ -89,6 +89,41 @@ img{
 .clearfix:after {
     clear: both;
     content: "";
-    display: table;
+    display: table; 
 }
+header{
+	background:#292929;
+	overflow: hidden; /* выставляем свойство overflow:hidden; что бы не схлопывались границы дива */
+}
+	.center-block-main{
+		margin:0 auto; /* центрирование мы задаем через атрибут margin*/
+		max-width:990px; /* свойство max-width задает адаптивное поведение сайта, не появляется горизонтальный скрол */
+
+	}
+.logo{
+	float:left; /* центрируем лого по левому краю */
+	margin-top: 45px; /* назначаем отступ сверху в 45 пксл что бы лого отцентрировалось поцентру */
+}
+.menu{
+	float: right;
+}
+	.menu li{
+		float: left; /* выровняли пункты меню по левой стороне, что бы они не были в столбик*/
+		font-weight: 600; /* жирность пунктов меню*/
+	}
+
+		.menu li a{ /* начинаем работу с ссылками */
+			color: #fff; /* задаем белый цвет ссылкам меню*/
+			text-decoration: none; /* убираем нижнее подчеркивание в ссылках*/
+			padding: 50px 35px ; /* отступы между линками меню */
+			display: block;
+			border-bottom:3px solid #292929; /* задаем нижний бордер 3 псл, чтобы не "прыгал" бордер активных ссылок
+			но цвет бордера задаем в тон бекранда header */
+		}
+			.menu li a:hover{ /* оформляем ссылки по наведению курсором */
+				color:#58c93a; /* задаем цвет активной ссылке*/
+				border-bottom:3px solid #58c93a; /* задаем цвет границы активной ссылки в 3пкс, сплошная, цвет бор
+				дера такой же как и выделение ссылок*/		
+			}
+
 /* --------------- /базовые настройки ---------*/
