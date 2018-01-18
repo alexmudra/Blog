@@ -233,6 +233,19 @@ aside{
 			float: right;/*выравниваем ссылки переключение по страницам по правому краю*/
 		}
 
+footer{ /*описываем футер*/
+	background: #f8f8f8;
+	border-top: 1px solid #e1e0e0;
+	text-align: center; /*сентрируем весь контент в блоке*/
+	font-size: 0.8125em; /**размер шрифта для контента футера*/
+	padding: 50px 0px;
+}
+	footer img{
+		margin-bottom: 20px;
+	}
+
+}
+
 
 
 /* --------------- /базовые настройки ---------*/
